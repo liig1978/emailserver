@@ -1,0 +1,7 @@
+package io.modulr.server.cmd.api.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmailService {
+}
