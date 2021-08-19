@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+
+  storage:
+    image: postgres:${POSTGRES_VERSION-latest}
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: emails
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: p@ssw0rd
+    networks:
+      - ${GLOBAL_NETWORK:-postgres}
