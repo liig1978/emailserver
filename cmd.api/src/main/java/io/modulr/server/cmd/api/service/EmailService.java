@@ -1,8 +1,8 @@
 package io.modulr.server.cmd.api.service;
 
-import io.modulr.server.cmd.api.dto.EmailDTO;
-import io.modulr.server.cmd.api.entity.Email;
-import io.modulr.server.cmd.api.repository.EmailRepository;
+import io.modulr.server.cmd.api.dataaccess.dto.EmailDTO;
+import io.modulr.server.cmd.api.dataaccess.entity.Email;
+import io.modulr.server.cmd.api.dataaccess.repository.EmailRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

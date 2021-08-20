@@ -11,7 +11,7 @@ import org.springframework.validation.ObjectError;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
+/*@Service*/
 public class ResponseErrorValidation {
     public ResponseEntity<Object> mapValidationService(BindingResult result) {
         if (result.hasErrors()) {
@@ -23,9 +23,9 @@ public class ResponseErrorValidation {
                 }
             }
 
-            for (FieldError error : result.getFieldErrors()) {
+/*            for (FieldError error : result.getFieldErrors()) {
                 errorMap.put(error.getField(), error.getDefaultMessage());
-            }
+            }*/
             return new ResponseEntity<>(errorMap, HttpStatus.BAD_REQUEST);
         }
         return null;

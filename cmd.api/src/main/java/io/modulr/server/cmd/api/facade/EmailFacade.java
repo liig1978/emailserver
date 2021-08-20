@@ -1,7 +1,7 @@
 package io.modulr.server.cmd.api.facade;
 
-import io.modulr.server.cmd.api.dto.EmailDTO;
-import io.modulr.server.cmd.api.entity.Email;
+import io.modulr.server.cmd.api.dataaccess.dto.EmailDTO;
+import io.modulr.server.cmd.api.dataaccess.entity.Email;
 import org.springframework.stereotype.Component;
 
 @Component
